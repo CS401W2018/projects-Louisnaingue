@@ -27,6 +27,7 @@ body {
 }
 .bolder {
     font-weight: bolder;
+    color: red;
 }
 .div1 {
     background-color: #18A8A8;
