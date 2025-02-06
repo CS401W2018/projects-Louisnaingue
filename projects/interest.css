@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0097b2;
+    font-size: 18pt;
+    color: white;
+}
+.title{
+    color: #FFD6F2;
+    font-style: italic;
+    font-family: "Italianno", serif;
+    letter-spacing: 5px;
+}
+.outline {
+    color: #00ffff;
+}
+.emphasize {
+    color:  #FFD6F2; 
+    font-size: 20pt;
+}
+.de-emphasize {
+    color: #13BDBD;
+    font-size: 14pt;
+}
+.bolder {
+    font-weight: bolder;
+}
+#reference {
+    font-weight: bolder;
+    color: purple;
+}
+
+.div1 {
+    background-color: #18A8A8;
+
+}
+#titleword {
+    color: black;
+}
