@@ -13,8 +13,12 @@ body {
 .outline {
     color: #00ffff;
 }
+#reference {
+    font-weight: bolder;
+    color: purple;
+}
 .emphasize {
-    color:  #FFD6F2; 
+    color:  purple; 
     font-size: 20pt;
 }
 .de-emphasize {
@@ -24,11 +28,6 @@ body {
 .bolder {
     font-weight: bolder;
 }
-#reference {
-    font-weight: bolder;
-    color: purple;
-}
-
 .div1 {
     background-color: #18A8A8;
 
