@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('images/background.png') rgb(11, 81, 119);
+    color: white;
+}
+header {
+    background-image: url('images/icon.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#title {
+    color: rgb(184, 231, 255);
+}
+.mylist{
+    list-style-image: url(images/icon.png); ;
+}

@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 18pt;
+}
+.title {
+    font-family: "Ephesis", serif;
+    font-style: normal;
+    font-weight: bolder;
+    color: rgb(22, 8, 128);
+}
+#outline {
+    color: black;
+}
+.div {
+    color: white;
+    background-color: black;
+}
+a:hover {
+    color: red;
+  }
