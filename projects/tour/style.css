@@ -1,21 +1,30 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: white;
     font-size: 18pt;
+    background-image: url(images/city.png);
 }
 .title {
-    font-family: "Ephesis", serif;
+    font-family: "Noto Serif Todhri", serif;
     font-style: normal;
-    font-weight: bolder;
-    color: rgb(22, 8, 128);
+    color: white;
 }
 #outline {
-    color: black;
+    color: white;
 }
 .div {
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.464);
 }
 a:hover {
     color: red;
   }
+.link {
+    color: #9afafa;
+}
+.linked {
+    color: #ffbd59;
+}
+.mylist{
+    list-style: url(images/pin.png);
+}
