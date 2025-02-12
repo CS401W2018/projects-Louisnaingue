@@ -28,3 +28,8 @@ a:hover {
 .mylist{
     list-style: url(images/pin.png);
 }
+#newyork {
+    background-image: url('images/NY.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
