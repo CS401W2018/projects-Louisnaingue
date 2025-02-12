@@ -31,5 +31,8 @@ a:hover {
 #newyork {
     background-image: url('images/NY.png');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right;
+}
+.place {
+    color: #00e0f9;
 }
