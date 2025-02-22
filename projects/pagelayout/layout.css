@@ -1,0 +1,91 @@
+body {
+    font-family: "Monsterrat", serif;
+    background-color: #93afb3;
+    background-size: 100%;
+}
+header {
+    text-align: center;
+    font-size: larger;
+}
+nav a {
+    text-align: center;
+    color: black;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 160px;
+    border-radius: 10px;
+    font-size: medium;
+}
+a:hover{
+    color: red;
+    font-size: large;
+
+}
+
+.borderblock {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+
+}
+.linked {
+    color: white;
+}
+.Statue img{
+    width: 100%;
+    border-radius: 15px;
+}
+figure:hover{
+    color: #EED202;
+    font-weight: bolder;
+}
+.floatimg {
+    margin-top: 0;
+    float: left;
+    border: 10px solid white;
+    width: 250px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,5);
+}
+.clear{
+    clear: both;
+}
+.paragraph {
+    font-family: Arial, Helvetica, sans-serif, serif;
+    text-align: justify;
+    
+}
+.head1 {
+    text-align: center;
+    line-height: 1;
+    color: #EED202;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+footer {
+    background-image: url(/projects/tour/images/pin.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box; 
+    background-clip: content-box; 
+    color: white;
+}
+.border {
+    border: thick solid white;
+    background-color: #EED202;
+    background-image: url(background.png);
+    width: 90%;
+    height: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.text {
+    text-align: center;
+}
