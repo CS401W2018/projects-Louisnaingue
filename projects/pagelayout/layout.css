@@ -81,6 +81,7 @@ footer {
     background-color: #EED202;
     background-image: url(background.png);
     width: 90%;
+    max-width: 90%;
     height: 90%;
     margin: 20px auto;
     padding: 10px;
