@@ -71,6 +71,11 @@ nav a:hover {
     color: red;
     font-weight: bolder;
 }
+figcaption {
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
 
 
 @media only screen and (max-width: 600px){
