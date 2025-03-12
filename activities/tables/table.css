@@ -23,8 +23,8 @@ body {
 .Schedule tfoot{
     background-color: blanchedalmond;
 }
-.Schedule tbody th{
-    border-bottom: thin solid black;
+.Schedule tbody tr:nth-child(even){
+    background-color: aquamarine;
 }
 
 /*
