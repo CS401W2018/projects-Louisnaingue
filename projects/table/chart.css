@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+header {
+    padding: 10px;
+    background-color: rgb(2, 80, 80);
+    margin: 0;
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+h2 {
+    padding-top: 20px;
+    margin: 0;
+    background-color: azure;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #12aa9d;
+    padding: 5 20px;
+}
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: red;
+    font-weight: bolder;
+}
+.Schedule thead {
+    font-size: 13px;
+    text-align: center;
+    background-color: #0d4836;
+    color: white;
+    border-spacing: 0;
+
+}
+.Schedule th {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.Schedule td {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Schedule {
+    border-spacing: 0;
+    border: thin solid rgb(18, 19, 18);
+    box-shadow: 3px 3px 2px rgb(20, 20, 20);
+    margin: 10px;
+}
+.even {
+    background-color: #4ad5b0;
+    color: rgb(31, 2, 2);
+}
+.odd {
+    background-color: #4f5654;
+    color: white;
+}
+td:not(:nth-child(2)) { 
+    text-align: center;
+}
+.box{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+main {
+    flex: 1;
+    justify-content: center;
+    width: 50%;
+    padding: 10x;
+    background-color: azure;
+}
+footer {
+    background-color: rgb(2, 80, 80);
+    color: white;
+    padding: 1px;
+}
+aside {
+    width: 50%;
+    height: 100%;
+    background-color: azure;
+    margin: 0;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.contain { 
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+figure img {
+    width: 140px;
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+aside h1 {
+    text-align: center;
+}
+aside p {
+    text-align: justify;
+    padding: 5px;
+}
+#para{
+    text-align: center;
+}
+table {
+    justify-content: center;
+}
