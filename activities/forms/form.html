@@ -14,7 +14,7 @@
         <form action="processing.html" method="post">
             <div>
                 <label for="fname">Full Name: </label>
-                <input type="text" name="fullname" id="fname">
+                <input type="text" name="fullname" id="fname" value="Louis">
             </div>
             <div>
                 <label for="email">Email: </label>
@@ -22,7 +22,7 @@
             </div>
             <div>
                 <label for="password">Password: </label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </div>
             <div>
                 <label for="state">State: </label>
@@ -32,6 +32,11 @@
                     <option value="UT">Utah</option>
                     <option value="Colorado">Colorado</option>
                 </select>
+            </div>
+            <div>
+                <div>Year in School: </div>
+                <label><input type="radio" name="year" value="freshman">freshman</label>
+
             </div>
             <div>
                 <input type="submit">
