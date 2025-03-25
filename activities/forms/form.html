@@ -11,53 +11,76 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
-            <div>
-                <label for="fname">Full Name: </label>
-                <input type="text" name="fullname" id="fname" value="Louis">
-            </div>
-            <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="password">Password: </label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <div>
-                <label for="state">State: </label>
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                    <option value="Colorado">Colorado</option>
-                </select>
-            </div>
-            <div>
-                <div>Year in School: </div>
-                <label><input type="radio" name="year" value="freshman">freshman</label>
-
-            </div>
-            <div>
-                <input type="submit">
-            </div>
+        <form action="processing.html" method="get" id="myForm">
+            <fieldset>
+                <legend class="outline">Accounts</legend>
+                <div>
+                    <label for="fname">Full Name: </label>
+                    <input type="text" name="fullname" id="fname" value="Louis">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div>
+                    <label for="state">State: </label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                        <option value="Colorado">Colorado</option>
+                    </select>
+                </div>
+                <div>
+                    <div>Year in School: </div>
+                    <label><input type="radio" name="year" value="freshman">freshman</label>
+                    <label><input type="radio" name="year" value="Sophomore">Sophomore</label>
+                    <label><input type="radio" name="year" value="Junior">Junior</label>
+                    <label><input type="radio" name="year" value="Senior">Senior</label>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </fieldset>
 
         </form>
-        
-        <ol>
-            <li>The form tag has an "action" attribute. What does it do?</li>
-            <p>Answer: tag specifies the URL where the form data will be sent after submission. </p>
-            <li> The form tag has a "method" attribute. What does it do?</li>
-            <p>Answer: attribute defines how form data is sent to the server. The two most common values are post and get </p>
-            <li>What is the difference between a "POST" and a "GET"?</li>
-            <p>Answer: A GET request sends data in the URL, like when you search for something on Google and see the search terms in the address bar.
-                A POST request sends data in the background, like when you log in to a website, and your password is sent securely without showing in the URL.</p>
-        </ol>
+        <fieldset>
+            <legend class="outline">Engagement Questions</legend>
+            <ol>
+                <li>What is JavaScript? How did it get its name?</li>
+                <p>Answer: avaScript is a programming language used to create interactive and dynamic content on websites.</p>
+                <li>What are the two ways you can run JavaScript?</li>
+                <p>Answer: Netscape partnered with Sun Microsystems (the company behind Java) and rebranded it as JavaScript to take advantage of Javas popularity at the time.</p>
+                <li>What was the most popular front-end js library?</li>
+                <p>Answer: Currently, React.js, developed by Meta (formerly Facebook), is the most popular front-end JavaScript library. </p>
+                <li>What is the most popular front-end js library today?</li>
+                <p>Answer: For many years, jQuery was the most popular front-end JavaScript library. It simplified DOM manipulation, event handling, and AJAX requests, making it easier to work with web pages.</p>
+                <li>The form tag has an "action" attribute. What does it do?</li>
+                <p>Answer: tag specifies the URL where the form data will be sent after submission. </p>
+                <li> The form tag has a "method" attribute. What does it do?</li>
+                <p>Answer: attribute defines how form data is sent to the server. The two most common values are post and get </p>
+                <li>What is the difference between a "POST" and a "GET"?</li>
+                <p>Answer: A GET request sends data in the URL, like when you search for something on Google and see the search terms in the address bar.
+                    A POST request sends data in the background, like when you log in to a website, and your password is sent securely without showing in the URL.</p>
+            </ol>
+        </fieldset>
 
     </main>
     <footer>
         <p>&copy; 2025 by Louis Naingue</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+            const fullname = document.getElementById('fname').value;
+            console.log(fullname);
+        });
+    </script>
     
 </body>
 </html>
