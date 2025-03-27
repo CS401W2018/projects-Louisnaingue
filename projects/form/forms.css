@@ -71,9 +71,12 @@ figcaption{
     padding-bottom: 10px;
 }
 .outline {
+    border: thin solid black;
+    background-color: white;
     font-size: large;
     font-weight: bolder;
     color: red;
+    padding: 5px;
 }
 .show {
     color: white;
@@ -104,4 +107,31 @@ figcaption{
     color: white;
     padding: 0;
     margin: 0;
+}
+.space {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.request {
+    display: flex;
+    justify-content: left;
+}
+#checkout {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: larger;
+}
+button:hover {
+    color: red;
+    font-weight: bolder;
+}
+.row {
+    display: flex; 
+    gap: 10px;
+    margin: 10px;
+}
+.row label {
+    width: 150px;
+    text-align: right;
 }
