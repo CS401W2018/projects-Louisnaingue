@@ -11,6 +11,7 @@
         <h1>Web Design</h1>
     </header>
     <main>
+        <div></div>
         <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend class="outline">Accounts</legend>
@@ -66,6 +67,10 @@
                 <li>What is the difference between a "POST" and a "GET"?</li>
                 <p>Answer: A GET request sends data in the URL, like when you search for something on Google and see the search terms in the address bar.
                     A POST request sends data in the background, like when you log in to a website, and your password is sent securely without showing in the URL.</p>
+                <li>What is AJAX?</li>
+                <p>Answer: AJAX (Asynchronous JavaScript and XML) is a technique used in web development that allows web pages to update content asynchronously without having to reload the entire page. </p>
+                <li>Why do you put your JS Code in a separate file?</li>
+                <p>Answer: JavaScript is placed in a separate file to improve maintainability, reusability, performance, and debugging, while keeping the HTML code clean and organized.</p>
             </ol>
         </fieldset>
 
@@ -73,14 +78,7 @@
     <footer>
         <p>&copy; 2025 by Louis Naingue</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-            alert("Form Submitted");
-            const fullname = document.getElementById('fname').value;
-            console.log(fullname);
-        });
-    </script>
+    <script src="form.js"></script>
     
 </body>
 </html>
