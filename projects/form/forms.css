@@ -126,12 +126,12 @@ button:hover {
     color: red;
     font-weight: bolder;
 }
-.row {
+.forms {
     display: flex; 
     gap: 10px;
     margin: 10px;
 }
-.row label {
+.forms label {
     width: 150px;
     text-align: right;
 }
