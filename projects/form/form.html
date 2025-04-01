@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>Movie Ticket Sales</header>
+    <nav>
+        <a href="#">Action</a>
+        <a href="#">Thriller</a>
+        <a href="#">Horror</a>
+        <a href="#">Romance</a>
+        <a href="#">Comedy</a>
+    </nav>
+    <main>
+        <form action="processing.html" method="post" id = "movie-ticket-form">
+            <div class="forms">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="forms">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="forms">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="808-456-7890" required>
+            </div>
+            <div class="forms">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="forms">
+                <label for="ticket-type">Ticket Type:</label>
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="">Select a ticket type</option>
+                    <option value="regular">Regular</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Child">Child</option>
+                </select>
+            </div>
+            <div class="forms">
+                <label for="Ticket-counts">Ticket Counts:</label>
+                <select name="Ticket-counts" id="Ticket-counts">
+                    <option value="">Select number of tickets</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+
+            <fieldset class="space">
+                <legend class="outline">Now Showing</legend>
+                <div class="movies">
+                    <label class="show">Movie:</label>
+                    <div class="radiocontain">
+                        <div class="border">
+                            <figure>
+                                <img src="../table/images/1.jpg" alt="Avatar">
+                            </figure>
+                            <figcaption>
+                                <label for="Avatar">Avatar: The Way of Water</label>
+                                <input type="radio" id="Avatar" name="movie" value="Avatar">
+                            </figcaption>
+                        </div>
+                        <div class="border">
+                            <figure>
+                                <img src="../table/images/3.jpg" alt="Avengers">
+                            </figure>
+                            <figcaption>
+                                <label for="Avengers">Avengers: EndGame</label>
+                                <input type="radio" id="Avengers" name="movie" value="Avengers">
+                            </figcaption>
+                        </div>
+                        <div class="border">
+                            <figure>
+                                <img src="../table/images/4.jpg" alt="Titanic">
+                            </figure>
+                            <figcaption>
+                                <label for="Titanic">Titanic</label>
+                                <input type="radio" id="Titanic" name="movie" value="Titanic">
+                            </figcaption>
+                        </div>
+                        <div class="border">
+                            <figure>
+                                <img src="../table/images/5.jpg" alt="StarWars">
+                            </figure>
+                            <figcaption>
+                                <label for="StarWars">Star Wars</label>
+                                <input type="radio" id="StarWars" name="movie" value="StarWars">
+                            </figcaption>
+                        </div>   
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="space">
+                <legend class="outline">Showtimes</legend>
+                <div class="movies">
+                    <label class="show">Please Select Time:</label>
+                    <div class="radiocontain1">
+                        <div class="box">
+                            <input type="radio" id="1PM" name="Time" value="1PM">
+                            <label for="1PM">1:00 PM</label>
+                        </div>
+                        <div class="box">
+                            <input type="radio" id="1PM" name="Time" value="1PM">
+                            <label for="1PM">3:45 PM</label>
+                        </div>
+                        <div class="box">
+                            <input type="radio" id="1PM" name="Time" value="1PM">
+                            <label for="1PM">5:45 PM</label>
+                        </div>
+                        <div class="box">
+                            <input type="radio" id="1PM" name="Time" value="1PM">
+                            <label for="1PM">7:45 PM</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset class="space">
+                <legend class="outline">Food Selection </legend>
+                <div class="movies">
+                    <label class="show">Please Select Order:</label>
+                    <div class="radiocontain2">
+                        <input type="checkbox" id="popcorn" name="snack" value="popcorn">
+                        <label for="popcorn">Popcorn</label>
+                        <input type="checkbox" id="baconburger" name="snack" value="baconburger">
+                        <label for="baconburger">Bacon Burger</label>
+                        <input type="checkbox" id="burger" name="snack" value="burger">
+                        <label for="bhickenburger">Chicken Burger</label>
+                        <input type="checkbox" id="hotdog" name="snack" value="hotdog">
+                        <label for="Chips">Potato Chips</label>
+                        <input type="checkbox" id="soda" name="snack" value="soda">
+                        <label for="soda">Soda</label>
+                        <input type="checkbox" id="water" name="snack" value="water">
+                        <label for="water">Water</label>
+                        <input type="checkbox" id="juice" name="snack" value="juice">
+                        <label for="juice">Apple Juice</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="request">
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="specialrequests" name="specialrequests" rows="4"></textarea>
+            </div>
+            <div id="checkout">
+                <button type="submit">Checkout</button>
+            </div>
+        </form>
+       
+    </main>
+    <footer>
+        <p>&copy; 2025 by Louis Naingue</p>
+    </footer>
+    
+</body>
+</html>
