@@ -17,7 +17,7 @@
     </nav>
     <main>
         <div id="message"></div>
-        <form action="processing.php" method="post" id="movieticket">
+        <form action="processing.html" method="post" id="movieticket">
             <div class="forms">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -173,10 +173,12 @@
         <p>&copy; 2025 by Louis Naingue</p>
     </footer>
     <script>
-        document-getElementById ("movieticket").addEventListener ("submit", function (event) {
+        document.getElementById ("movieticket").addEventListener ("submit", function (event) {
             event.preventDefault();
             const first = document.getElementById ("fname").value;
             const last = document.getElementById ("lname").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
 
             if (!first || !last) {
                 alert("Please provide your full name.");
@@ -186,6 +188,8 @@
             const data = {
                 fname: first, 
                 lname: last,
+                email: email,
+                phone: phone,
             }
 
             const xhr = new XMLHttpRequest();
@@ -200,7 +204,7 @@
                     alert('Error submitting form.');
                 }
             };
-            xhr.send(JSON. stringify(data));
+            xhr.send(JSON.stringify(data));
             console.log(data);
         });
     </script>
