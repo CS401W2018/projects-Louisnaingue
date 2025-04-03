@@ -17,7 +17,7 @@
     </nav>
     <main>
         <div id="message"></div>
-        <form action="processing.html" method="post" id="movieticket">
+        <form action="processing.php" method="post" id="movieticket">
             <div class="forms">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -146,7 +146,7 @@
                         <input type="checkbox" id="baconburger" name="snack" value="baconburger">
                         <label for="baconburger">Bacon Burger</label>
                         <input type="checkbox" id="burger" name="snack" value="burger">
-                        <label for="bhickenburger">Chicken Burger</label>
+                        <label for="chickenburger">Chicken Burger</label>
                         <input type="checkbox" id="hotdog" name="snack" value="hotdog">
                         <label for="Chips">Potato Chips</label>
                         <input type="checkbox" id="soda" name="snack" value="soda">
@@ -189,18 +189,18 @@
             }
 
             const xhr = new XMLHttpRequest();
-            xhr. open ("POST", "submit.json", true);
-            xhr. setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
+            xhr.open ("POST", "submit.json", true);
+            xhr.setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                    const response = JSON.parse(xhr.responseText);
                    document.getElementById("message").innerHTML = response.message
                 } 
                 else if (xhr.readyState === 4) {
-                    alert ('Error submitting form.');
+                    alert('Error submitting form.');
                 }
             };
-            xhr. send (JSON. stringify(data));
+            xhr.send(JSON. stringify(data));
             console.log(data);
         });
     </script>
