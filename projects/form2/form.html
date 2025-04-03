@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>Movie Ticket Sales</header>
@@ -16,20 +16,25 @@
         <a href="#">Comedy</a>
     </nav>
     <main>
-        <form action="processing.html" method="post" id = "movie-ticket-form">
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="movieticket">
             <div class="forms">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+            </div>
+            <div class="forms">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
             </div>
 
             <div class="forms">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" >
             </div>
 
             <div class="forms">
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="808-456-7890" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="8084567890">
             </div>
             <div class="forms">
                 <label for="date">Select Date:</label>
@@ -167,6 +172,37 @@
     <footer>
         <p>&copy; 2025 by Louis Naingue</p>
     </footer>
-    
+    <script>
+        document-getElementById ("movieticket").addEventListener ("submit", function (event) {
+            event.preventDefault();
+            const first = document.getElementById ("fname").value;
+            const last = document.getElementById ("lname").value;
+
+            if (!first || !last) {
+                alert("Please provide your full name.");
+                return;
+            }
+
+            const data = {
+                fname: first, 
+                lname: last,
+            }
+
+            const xhr = new XMLHttpRequest();
+            xhr. open ("POST", "submit.json", true);
+            xhr. setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                   const response = JSON.parse(xhr.responseText);
+                   document.getElementById("message").innerHTML = response.message
+                } 
+                else if (xhr.readyState === 4) {
+                    alert ('Error submitting form.');
+                }
+            };
+            xhr. send (JSON. stringify(data));
+            console.log(data);
+        });
+    </script>
 </body>
 </html>
