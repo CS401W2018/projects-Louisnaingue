@@ -164,6 +164,7 @@ article img {
     
 }
 .foodbox{
+    width: 100%;
     margin-bottom: 10%;
 }
 .Schedule thead {
@@ -210,10 +211,25 @@ article img {
 }
 .list {
     margin-left: 5%;
+    margin-right: 5%;
     font-size: larger;
 }
+.foodbox1{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px){
     header{
+        width: 100%;
         text-align: center;
         display: flex;
         justify-content: center; 
@@ -222,6 +238,7 @@ article img {
         background-color: #f9c324;
     }
     nav {
+        width: 100%;
         background-color:#f9c324;
         flex-direction: column;
     }
@@ -242,4 +259,23 @@ article img {
         width: 100%;
         order: -1;
     }
+    .foodmain {
+        margin: 0;
+        width: 100%;
+    }
+    .Schedule{
+        width: 100%;
+        margin: 0;
+    }
+    .foodbox {
+        margin: 0;
+    }
+    .foodbox1 {
+        margin: 0;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+
 }
