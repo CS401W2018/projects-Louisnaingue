@@ -92,7 +92,7 @@ footer {
 .profile h1{
     text-align: center;
 }
-.articles figcaption {
+.articles h1 {
     text-align: center;
     font-weight: bolder;
 }
@@ -217,6 +217,10 @@ article img {
 .foodbox1{
     width: 100%;
     margin-bottom: 10%;
+}
+li {
+    padding-bottom: 20px;
+  
 }
 
 
