@@ -21,11 +21,103 @@
             <a href="destinations.html">Destinations</a>
             <a class="linked" href="contact.html">Contact</a>
         </nav>
-        <main>
-            <h1>Home Made Adobo</h1>
-            <p></p>
-        </main>
     </div>
+    <main class="foodmain">
+        <form action="processing.html" method="get" id="containform">
+            <h1>Sign Up!</h1>
+            <div id="message"></div>
+            <div class="forms">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"  value="" placeholder="First Name">
+            </div>
+            <div class="forms">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"  value=""  placeholder="Last Name">
+            </div>
+            <div class="forms">
+                <label for="bdate">Birth Date:</label>
+                <input type="date" id="bdate" name="bdate" required value="">
+            </div>
+            <div class="forms">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required  value="" placeholder="youremail@gmail.com">
+            </div>
+            <div class="forms">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required  value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="808-456-7890">
+            </div>
+            <div class="formmessage">
+                <p>Would you like to be updated?</p>
+                <input type="radio" id="yes" name="agreement" value="yes">
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="agreement" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div class="formmessage">
+                <input class="register" type="submit" value="Register">
+            </div>
+            <div class="reg">
+                <img src="/final/images/reg.png" alt="reg">
+            </div>
+        </form>
+        <fieldset>
+            <legend class="outline">Packages Available:</legend>
+             <div class="boxes">
+                <figure class="figimg1">
+                    <img src="/final/images/3.png" alt="palawan">
+                    <input type="submit" value="BOOK NOW" class="register1">
+                </figure>
+                <div>
+                    <h2>Palawan Deluxe</h2>
+                    <p>5 days, 4 nights for 2 people, includes hotel stay, Puerto Princesa Underground River, El Nido island hopping, transfers, and meals. Explore stunning lagoons, crystal-clear waters, and untouched beaches.</p> 
+                    <p class="price">Price: ₱38,000 ($680)</p>
+                </div>
+             </div>
+             <div class="boxes">
+                <figure class="figimg1">
+                    <img src="/final/images/5.png" alt="palawan">
+                    <input type="submit" value="BOOK NOW" class="register1">
+                </figure>
+                <div>
+                    <h2>Boracay Island Getaway</h2>
+                    <p>4 days, 3 nights for 2 people, includes roundtrip airfare, beachfront hotel, island hopping to popular spots like Crystal Cove, and a sunset cruise along the coast. Perfect for a relaxing and scenic escape.</p> 
+                    <p class="price">Price: ₱30,000 ($540)</p>
+                </div>
+             </div> 
+             <div class="boxes">
+                <figure class="figimg1">
+                    <img src="/final/images/7.png" alt="palawan">
+                    <input type="submit" value="BOOK NOW" class="register1">
+                </figure>
+                <div>
+                    <h2>Cebu-Bohol Historical & Island Tour</h2>
+                    <p>5 days, 4 nights for 2 people, includes tours of historical sites in Cebu, a visit to the famous Chocolate Hills and Tarsiers in Bohol, and relaxation on Panglao Beach. A great combination of culture and nature.</p> 
+                    <p class="price">Price: ₱35,000 ($620)</p>
+                </div>
+             </div>
+             <div class="boxes">
+                <figure class="figimg1">
+                    <img src="/final/images/6.png" alt="palawan">
+                    <input type="submit" value="BOOK NOW" class="register1">
+                </figure>
+                <div>
+                    <h2>Coron Wreck Diving & Island Tour</h2>
+                    <p>5 days, 4 nights for 2 people, includes guided dives to explore WWII shipwrecks, trips to Kayangan Lake, and island hopping to stunning lagoons, all with full meals provided. Perfect for dive enthusiasts and nature lovers.</p> 
+                    <p class="price">Price: ₱40,000 ($710)</p>
+                </div>
+             </div>
+
+        </fieldset>
+        <div class="footerimg">
+            <img src="/final/images/footer.png" alt="city">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 by Louis Naingue</p>
+    </footer>
+    <script src="register.js"></script>
     
 </body>
 </html>
