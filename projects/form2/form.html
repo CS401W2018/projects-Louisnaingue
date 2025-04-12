@@ -26,10 +26,14 @@
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname" placeholder="Last Name">
             </div>
+            <div class="forms">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Age">
+            </div>
 
             <div class="forms">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" >
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" >
             </div>
 
             <div class="forms">
@@ -43,7 +47,7 @@
 
             <div class="forms">
                 <label for="ticket-type">Ticket Type:</label>
-                <select id="ticket-type" name="ticket-type" required>
+                <select id="ticket-type" name="ticket-type" >
                     <option value="">Select a ticket type</option>
                     <option value="regular">Regular</option>
                     <option value="imax">IMAX</option>
@@ -172,41 +176,6 @@
     <footer>
         <p>&copy; 2025 by Louis Naingue</p>
     </footer>
-    <script>
-        document.getElementById ("movieticket").addEventListener ("submit", function (event) {
-            event.preventDefault();
-            const first = document.getElementById ("fname").value;
-            const last = document.getElementById ("lname").value;
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-
-            if (!first || !last) {
-                alert("Please provide your full name.");
-                return;
-            }
-
-            const data = {
-                fname: first, 
-                lname: last,
-                email: email,
-                phone: phone,
-            }
-
-            const xhr = new XMLHttpRequest();
-            xhr.open ("POST", "submit.json", true);
-            xhr.setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                   const response = JSON.parse(xhr.responseText);
-                   document.getElementById("message").innerHTML = response.message
-                } 
-                else if (xhr.readyState === 4) {
-                    alert('Error submitting form.');
-                }
-            };
-            xhr.send(JSON.stringify(data));
-            console.log(data);
-        });
-    </script>
+    <script src="submit.js"></script>
 </body>
 </html>

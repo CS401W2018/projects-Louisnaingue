@@ -26,41 +26,44 @@
         <form action="processing.html" method="get" id="containform">
             <h1>Sign Up!</h1>
             <div id="message"></div>
-            <div class="forms">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname"  value="" placeholder="First Name">
-            </div>
-            <div class="forms">
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname"  value=""  placeholder="Last Name">
-            </div>
-            <div class="forms">
-                <label for="bdate">Birth Date:</label>
-                <input type="date" id="bdate" name="bdate" required value="">
-            </div>
-            <div class="forms">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required  value="" placeholder="youremail@gmail.com">
-            </div>
-            <div class="forms">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required  value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="808-456-7890">
-            </div>
-            <div class="formmessage">
-                <p>Would you like to be updated?</p>
-                <input type="radio" id="yes" name="agreement" value="yes">
-                <label for="yes">Yes</label>
+            <div id="fcenter">
+                <div class="forms">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname"  value="" placeholder="First Name">
+                </div>
+                <div class="forms">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"  value=""  placeholder="Last Name">
+                </div>
+                <div class="forms">
+                    <label for="bdate">Birth Date:</label>
+                    <input type="date" id="bdate" name="bdate" required value="">
+                </div>
+                <div class="forms">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required  value="" placeholder="youremail@gmail.com">
+                </div>
+                <div class="forms">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required  value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="808-456-7890">
+                </div>
+                <div class="formmessage">
+                    <p>Would you like to be updated?</p>
+                    <input type="radio" id="yes" name="agreement" value="yes">
+                    <label for="yes">Yes</label>
 
-                <input type="radio" id="no" name="agreement" value="no">
-                <label for="no">No</label>
-            </div>
+                    <input type="radio" id="no" name="agreement" value="no">
+                    <label for="no">No</label>
+                </div>
 
-            <div class="formmessage">
-                <input class="register" type="submit" value="Register">
+                <div class="formmessage">
+                    <input class="register" type="submit" value="Register">
+                </div>
+                <div class="reg">
+                    <img src="/final/images/reg.png" alt="reg">
+                </div>
             </div>
-            <div class="reg">
-                <img src="/final/images/reg.png" alt="reg">
-            </div>
+            
         </form>
         <fieldset>
             <legend class="outline">Packages Available:</legend>
