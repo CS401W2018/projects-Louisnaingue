@@ -191,7 +191,7 @@ article img {
     color: black;
     background-color: rgb(249, 240, 240);
     border-radius: 15px;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0);
+    box-shadow: 10px 10px 20px black;
 }
 .foodmargin {
     width: 100%;
