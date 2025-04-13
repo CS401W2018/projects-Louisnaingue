@@ -189,7 +189,7 @@ article img {
     border: 10px solid white;
     text-align: center;
     color: black;
-    background-color: white;
+    background-color: rgb(249, 240, 240);
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0,0,0,5);
 }
@@ -494,7 +494,7 @@ fieldset {
         margin-left: 10%;
         margin-right: 10%;
         max-width: 450px;
-        height: 300px;
+        height: 30px;
     }
 
 
