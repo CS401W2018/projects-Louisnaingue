@@ -127,7 +127,32 @@ article img {
     width: 50%;
     padding: 10px;
     padding-top: 10px;
-    font-size: x-large;
+
+}
+#jeep {
+    width: 400px;
+}
+#jeep img {
+    max-width: 100%;
+
+}
+.content4 {
+    margin: 20px;
+    font-size: large;
+    line-height: 1.4;
+
+}
+.Ch2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content3{
+    font-size: large;
+}
+.orders {
+    margin: 0;
+    padding: 0;
 }
 .content1 img {
     max-width: 100%;
@@ -396,6 +421,13 @@ fieldset {
         padding: 0;
         margin: 0;
     }
+    #jeep {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
 
     .profile {
         margin-bottom: 10px;
