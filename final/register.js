@@ -25,6 +25,12 @@ document.getElementById("containform").addEventListener("submit", function(event
         alert("You must be 18 years old and above to register")
         return;
     }
+    if (first.length < 2){
+        alert("Name must be at least 2 characters long")
+    }
+    if (last.length < 2){
+        alert("Name must be at least 2 characters long")
+    }
 
 
     const data = {
