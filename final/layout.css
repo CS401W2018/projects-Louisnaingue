@@ -65,8 +65,12 @@ video {
     padding-bottom: 50px;
     
 }
+.Ch3 {
+    text-align: center;
+
+}
 .para {
-    margin-left: 15%;
+    margin-left: 20%;
 }
 .paragraph {
     text-align: center;
@@ -198,6 +202,9 @@ article img {
 .foodparagraph {
     font-size: x-large;
    
+}
+.Ch4 {
+    text-align: center;
 }
 .foodmain {
     margin-left: 20%;
@@ -483,5 +490,13 @@ fieldset {
     .para {
         margin-left: 10%;
     }
+    .response {
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 450px;
+        height: 300px;
+    }
+
+
 
 }
