@@ -384,6 +384,25 @@ fieldset {
     color: red;
 }
 
+.boxes1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 20px;
+}
+.figimg2 {
+    width: 20%;
+    padding: 0;
+}
+.figimg2 img{
+    width: 300px;
+    height: 260px;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+
+
 
 
 @media only screen and (max-width: 600px){
@@ -420,7 +439,18 @@ fieldset {
         margin-right: 15%;
     
     }
+    
+    .boxes1 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
     .content1 {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .boxes1 {
         display: block;
         width: 100%;
         margin-bottom: 0;
@@ -496,6 +526,7 @@ fieldset {
         max-width: 450px;
         height: 30px;
     }
+   
 
 
 
